@@ -1,19 +1,19 @@
 import { Dimensions } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
-const imageWidth = Dimensions.get('window').width  ;
-const imageHeight = Dimensions.get('window').height/4  ;
+const imageWidth = Dimensions.get('window').width;
+const imageHeight = Dimensions.get('window').height;
 
 export default EStyleSheet.create({
   container: {
-    alignItems: 'center',
+    flex: 1,
+    alignItems: 'flex-start',
     justifyContent: 'center',
-    flexDirection: 'column',
-    height: imageHeight,
+    flexDirection: 'row',
   },
   wrapper: {
     justifyContent: 'center',
-    flex: 1,
+    flex: .4,
   //  alignItems: 'flex-start',
   },
   icon: {

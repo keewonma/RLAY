@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { View, StatusBar } from 'react-native';
 
 import { Container } from '../components/Container';
-import { DevoButton} from '../components/Buttons';
-// import { DevoButton2} from '../components/Buttons';
-// import { DevoButton3} from '../components/Buttons';
+import { DevoButton } from '../components/Buttons';
+import { ScheduleButton } from '../components/Buttons';
+import { LeadersButton } from '../components/Buttons';
 
 
 
@@ -19,6 +19,8 @@ class Home extends Component {
       <Container>
         <StatusBar translucent={false} barStyle="light-content" />
         <DevoButton onPress={this.handleSwapCurrency} />
+        <ScheduleButton onPress={this.handleSwapCurrency} />
+        <LeadersButton onPress={this.handleSwapCurrency} />
       </Container>
     );
   }

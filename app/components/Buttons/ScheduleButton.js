@@ -3,17 +3,17 @@ import { TouchableOpacity, View, Text, Image } from 'react-native';
 
 import styles from './styles';
 
-const DevoButton = ( {onPress} ) => (
+const ScheduleButton = ( {onPress} ) => (
   <TouchableOpacity onPress={onPress}>
     <View style={styles.wrapper}>
-      <Image resizeMode="contain" style={styles.icon} source={require('./images/Devo.png')} />
+      <Image resizeMode="contain" style={styles.icon} source={require('./images/Schedule.png')} />
 
     </View>
   </TouchableOpacity>
 );
 
-DevoButton.propTypes = {
+ScheduleButton.propTypes = {
   onPress: PropTypes.func,
 };
 
-export default DevoButton;
+export default ScheduleButton;
