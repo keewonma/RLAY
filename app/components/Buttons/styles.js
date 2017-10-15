@@ -7,21 +7,37 @@ const imageHeight = Dimensions.get('window').height;
 export default EStyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'flex-start',
-    justifyContent: 'center',
-    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
   },
   wrapper: {
-    justifyContent: 'center',
-    flex: .4,
+    justifyContent: 'space-around',
+    flex: 1,
   //  alignItems: 'flex-start',
   },
   icon: {
-    flex: 1,
+    flex: .3,
     //marginRight: 5,
     //marginLeft: 5,
     width: imageWidth,
     height: imageHeight,
+    justifyContent: 'space-around',
+  },
+  icon2: {
+    flex: .3,
+    //marginRight: 5,
+    //marginLeft: 5,
+    width: imageWidth,
+    height: imageHeight,
+    justifyContent: 'space-around'
+  },
+  icon3: {
+    flex: .3,
+    //marginRight: 5,
+    //marginLeft: 5,
+    width: imageWidth,
+    height: imageHeight,
+    justifyContent: 'space-around'
   },
 
 });

@@ -6,7 +6,7 @@ import styles from './styles';
 const ScheduleButton = ( {onPress} ) => (
   <TouchableOpacity onPress={onPress}>
     <View style={styles.wrapper}>
-      <Image resizeMode="contain" style={styles.icon} source={require('./images/Schedule.png')} />
+      <Image resizeMode="contain" style={styles.icon2} source={require('./images/Schedule.png')} />
 
     </View>
   </TouchableOpacity>
