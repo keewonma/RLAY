@@ -1,4 +1,32 @@
-import React from 'react';
-import { View } from 'react-native';
+import React, { Component } from 'react';
+import { View, StatusBar } from 'react-native';
 
-export default () => <View />;
+import { Container } from '../components/Container';
+import { DevoButton } from '../components/Buttons';
+import { ScheduleButton } from '../components/Buttons';
+import { LeadersButton } from '../components/Buttons';
+
+
+
+
+class Home extends Component {
+
+  handleSwapCurrency = () => {
+    console.log('press swap currency');
+  };
+  render() {
+    return(
+      <Container>
+        <StatusBar translucent={false} barStyle="light-content" />
+        <DevoButton onPress={this.handleSwapCurrency} />
+        <ScheduleButton onPress={this.handleSwapCurrency} />
+        <LeadersButton onPress={this.handleSwapCurrency} />
+      </Container>
+    );
+  }
+}
+
+
+
+
+export default Home;
