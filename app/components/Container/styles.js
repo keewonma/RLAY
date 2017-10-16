@@ -6,5 +6,6 @@ export default EStyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around',
     backgroundColor: '$primaryWhite',
+    padding: 25,
   },
 });
