@@ -17,7 +17,7 @@ class Home extends Component {
   render() {
     return(
       <Container>
-        <StatusBar translucent={false} barStyle="light-content" />
+        <StatusBar translucent={true} barStyle="light-content" />
         <DevoButton onPress={this.handleSwapCurrency} />
         <ScheduleButton onPress={this.handleSwapCurrency} />
         <LeadersButton onPress={this.handleSwapCurrency} />

@@ -4,7 +4,7 @@ import { TouchableOpacity, View, Text, Image } from 'react-native';
 import styles from './styles';
 
 const DevoButton = ( {onPress} ) => (
-  <TouchableOpacity onPress={onPress}>
+  <TouchableOpacity style={styles.container} onPress={onPress}>
     <View style={styles.wrapper}>
       <Image resizeMode="contain" style={styles.icon} source={require('./images/Devo.png')} />
 
