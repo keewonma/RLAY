@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StatusBar, AppRegistry, TextInput, Text } from 'react-native';
+import {  AppRegistry, ScrollView, StatusBar, TextInput, Text } from 'react-native';
 
 export default class UselessTextInput extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ export default class UselessTextInput extends Component {
 
   render() {
     return (
-    <View style={{flex: 1, padding: 20}}>
+    <ScrollView style={{flex: 1, padding: 20}}>
       <Text
         style={{fontSize: 30,
         fontWeight: 'bold',
@@ -78,15 +78,15 @@ export default class UselessTextInput extends Component {
           justifyContent: 'center',}}
           >
           {"\n"}Day 3: Read 1 Peter 5:6-7{"\n"}
-          </Text>
-          <Text>
+      </Text>
+      <Text>
           1. What stood out to you about this chapter?{"\n"}
           2. How does fearing God make us humble?{"\n"}
           3. How do you deal with your fears?{"\n"}
           4. The fear of the lord cast out all fear so what should we do with those fears?{"\n"}
       </Text>
 
-    </View>
+    </ScrollView>
     );
   }
 }
