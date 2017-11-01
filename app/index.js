@@ -1,7 +1,7 @@
 import React from 'react';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
-import Home from './screens/Home';
+import Devo from './screens/Devo';
 
 
 EStyleSheet.build({
@@ -10,4 +10,4 @@ EStyleSheet.build({
   $plainWhite: 'FFFFFF',
 });
 
-export default () => <Home />;
+export default () => <Devo />;
