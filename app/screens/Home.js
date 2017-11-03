@@ -5,22 +5,38 @@ import { Container } from '../components/Container';
 import { DevoButton } from '../components/Buttons';
 import { ScheduleButton } from '../components/Buttons';
 import { LeadersButton } from '../components/Buttons';
-
-
-
+import styles from '../components/Buttons/styles';
 
 class Home extends Component {
 
-  handleSwapCurrency = () => {
-    console.log('press swap currency');
+  handleDevo = () => {
+    console.log('press Devo');
   };
+
+  handleSchedule = () => {
+    console.log('press Schedule');
+  };
+
+  handleLeaders = () => {
+    console.log('press Leaders');
+  };
+
+
   render() {
     return(
+
       <Container>
-        <StatusBar translucent={false} barStyle="light-content" />
-        <DevoButton onPress={this.handleSwapCurrency} />
-        <ScheduleButton onPress={this.handleSwapCurrency} />
-        <LeadersButton onPress={this.handleSwapCurrency} />
+        <View>
+          <StatusBar
+            translucent={false}
+            barStyle="dark-content"/>
+        </View>
+        <View style={styles.wrapper}>
+          <DevoButton onPress={this.handleDevo} />
+          <ScheduleButton onPress={this.handleSchedule} />
+          <LeadersButton onPress={this.handleLeaders} />
+
+        </View>
       </Container>
     );
   }

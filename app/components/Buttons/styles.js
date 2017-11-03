@@ -8,36 +8,51 @@ export default EStyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+    flexDirection: 'column',
     justifyContent: 'space-around',
   },
   wrapper: {
+    flex: 0,
+    flexDirection: 'column',
+    alignItems: 'center',
     justifyContent: 'space-around',
-    flex: 1,
+    
   //  alignItems: 'flex-start',
   },
   icon: {
-    flex: .3,
+    flex: 0.7,
+    alignItems: 'center',
+
     //marginRight: 5,
     //marginLeft: 5,
+    margin:20,
+    flexDirection: 'column',
+
     width: imageWidth,
-    height: imageHeight,
-    justifyContent: 'space-around',
+    // height: imageHeight/100,
+    justifyContent: 'space-between',
   },
   icon2: {
-    flex: .3,
+    flex: 0.7,
+    alignItems: 'center',
+    flexShrink: 1,
     //marginRight: 5,
     //marginLeft: 5,
+    margin:20,
     width: imageWidth,
-    height: imageHeight,
-    justifyContent: 'space-around'
+    // height: imageHeight,
+    justifyContent: 'space-between'
   },
   icon3: {
-    flex: .3,
+    flex: 0.7,
+    alignItems: 'center',
+    flexDirection: 'column',
+    margin:20,
     //marginRight: 5,
     //marginLeft: 5,
     width: imageWidth,
-    height: imageHeight,
-    justifyContent: 'space-around'
+    // height: imageHeight/100,
+    justifyContent: 'space-between'
   },
 
 });

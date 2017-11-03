@@ -7,7 +7,6 @@ const DevoButton = ( {onPress} ) => (
   <TouchableOpacity onPress={onPress}>
     <View style={styles.wrapper}>
       <Image resizeMode="contain" style={styles.icon} source={require('./images/Devo.png')} />
-
     </View>
   </TouchableOpacity>
 );
