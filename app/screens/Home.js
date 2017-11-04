@@ -26,6 +26,7 @@ class Home extends Component {
     return(
 
       <Container>
+
         <View>
           <StatusBar
             translucent={false}
@@ -37,6 +38,7 @@ class Home extends Component {
           <LeadersButton onPress={this.handleLeaders} />
 
         </View>
+
       </Container>
     );
   }

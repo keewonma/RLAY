@@ -1,21 +1,23 @@
 import { Dimensions } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
-const imageWidth = Dimensions.get('window').width;
-const imageHeight = Dimensions.get('window').height;
+
 
 export default EStyleSheet.create({
+
   container: {
     flex: 1,
     alignItems: 'center',
     flexDirection: 'column',
     justifyContent: 'space-around',
   },
+
   wrapper: {
     flex: 0,
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'space-around',
+
     
   //  alignItems: 'flex-start',
   },
@@ -54,5 +56,7 @@ export default EStyleSheet.create({
     // height: imageHeight/100,
     justifyContent: 'space-between'
   },
+
+
 
 });
